@@ -1,0 +1,13 @@
+.body{
+    background: lightcyan;
+}
+
+.bought {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.notBought {
+    color: lightcoral;
+    font-weight: bold;
+}

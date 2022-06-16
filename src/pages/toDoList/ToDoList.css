@@ -1,0 +1,13 @@
+body {
+    background-color: aquamarine;
+}
+
+.done {
+    color: green;
+}
+
+.errorMessage {
+    color: red;
+    font-style: italic;
+    letter-spacing: 2px;
+}
