@@ -3,6 +3,7 @@ import "./ShopList.css";
 import Navbar from "../../generalComponents/Navbar";
 import Form from "./components/Form";
 import Table from "./components/Table";
+import MainNavbar from "../../generalComponents/MainNavbar";
 
 class ShopList extends Component {
   constructor() {
@@ -113,6 +114,7 @@ class ShopList extends Component {
       <div>
         <div className='container'>
           <div className='row'>
+            <MainNavbar />
             <Navbar name={this.state.appName} />
             <Form
               updateParentState={this.updateParentState}

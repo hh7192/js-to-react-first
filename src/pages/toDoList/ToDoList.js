@@ -3,6 +3,7 @@ import "./ToDoList.css";
 import Navbar from "../../generalComponents/Navbar";
 import Form from "./components/Form";
 import Table from "./components/Table";
+import MainNavbar from "../../generalComponents/MainNavbar";
 
 class ToDoList extends Component {
   constructor() {
@@ -83,6 +84,7 @@ class ToDoList extends Component {
     return (
       <div className='container'>
         <div className='row'>
+          <MainNavbar />
           <Navbar name={this.state.appName} />
           <Form
             update={this.updateParentState}
