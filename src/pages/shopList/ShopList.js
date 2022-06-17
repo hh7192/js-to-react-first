@@ -49,8 +49,7 @@ class ShopList extends Component {
     if (
       this.state.itemName !== "" &&
       this.state.itemName !== "" &&
-      this.state.itemPrice !== "" &&
-      this.state.itemUnit !== "Number"
+      this.state.itemPrice !== ""
     ) {
       shoplistClone.push({
         name: this.state.itemName,

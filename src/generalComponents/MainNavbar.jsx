@@ -6,7 +6,7 @@ class MainNavbar extends Component {
       <nav className='navbar navbar-expand-lg bg-light'>
         <div className='container-fluid'>
           <a className='navbar-brand' href='#'>
-            Projects
+            Tasks
           </a>
           <button
             className='navbar-toggler'
@@ -31,8 +31,13 @@ class MainNavbar extends Component {
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='/randombg'>
-                  Random Background
+                <a className='nav-link' href='/randomhexbg'>
+                  RandomHex Background
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href='/randomgradientbg'>
+                  RandomGradient Background
                 </a>
               </li>
             </ul>
