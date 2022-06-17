@@ -30,6 +30,11 @@ class MainNavbar extends Component {
                   ShopList
                 </a>
               </li>
+              <li className='nav-item'>
+                <a className='nav-link' href='/randombg'>
+                  Random Background
+                </a>
+              </li>
             </ul>
           </div>
         </div>
