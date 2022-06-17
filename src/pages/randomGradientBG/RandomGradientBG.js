@@ -4,28 +4,12 @@ import MainNavbar from "../../generalComponents/MainNavbar";
 
 class RandomGradientBG extends Component {
   constructor() {
+    document.title="Hamidreza | Random Gradient Background"
     super();
     this.state = {
       color1: "",
       color2: "",
       color3: "",
-      hexNumbers: [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-      ],
     };
   }
 
@@ -33,15 +17,32 @@ class RandomGradientBG extends Component {
     let color1Clone = "#",
       color2Clone = "#",
       color3Clone = "#";
+     const hexNumbers = [
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "a",
+       "b",
+       "c",
+       "d",
+       "e",
+       "f",
+     ];
 
-    for (let i = 0; i < 6; i++) {
-      let random1 = Math.floor(Math.random() * this.state.hexNumbers.length);
-      color1Clone += this.state.hexNumbers[random1];
-      let random2 = Math.floor(Math.random() * this.state.hexNumbers.length);
-      color2Clone += this.state.hexNumbers[random2];
-      let random3 = Math.floor(Math.random() * this.state.hexNumbers.length);
-      color3Clone += this.state.hexNumbers[random3];
-    }
+     for (let i = 0; i < 6; i++) {
+       let random1 = Math.floor(Math.random() * hexNumbers.length);
+       color1Clone += hexNumbers[random1];
+       let random2 = Math.floor(Math.random() * hexNumbers.length);
+       color2Clone += hexNumbers[random2];
+       let random3 = Math.floor(Math.random() * hexNumbers.length);
+       color3Clone += hexNumbers[random3];
+     }
 
     this.setState({
       color1: color1Clone,

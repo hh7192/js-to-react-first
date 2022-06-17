@@ -40,6 +40,16 @@ class MainNavbar extends Component {
                   RandomGradient Background
                 </a>
               </li>
+              <li className='nav-item'>
+                <a className='nav-link' href='/guessnumber'>
+                  Number Guess
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href='/hangman'>
+                  Hangman
+                </a>
+              </li>
             </ul>
           </div>
         </div>

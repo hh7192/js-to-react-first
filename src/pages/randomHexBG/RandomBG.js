@@ -4,38 +4,39 @@ import MainNavbar from "../../generalComponents/MainNavbar";
 
 class RandomBG extends Component {
   constructor() {
+    document.title = 'HamidreZa | Random Background Color'
     super();
     this.state = {
       color: "",
-      hexNumbers: [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-      ],
     };
   }
 
   getColor = () => {
-    let colorClone = "#";
+    let newColor = "#";
+    const hexNumbers = [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+    ];
 
     for (let i = 0; i < 6; i++) {
-      let random = Math.floor(Math.random() * this.state.hexNumbers.length);
-      colorClone += this.state.hexNumbers[random];
+      let random = Math.floor(Math.random() * hexNumbers.length);
+      newColor += hexNumbers[random];
     }
 
-    this.setState({color: colorClone});
+    this.setState({color: newColor});
   };
 
   render() {
